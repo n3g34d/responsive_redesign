@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#homeone" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#sectionone" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Usability Problems</a>
+    <a href="#sectionthree" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Lo Fi Prototype</a>
+    <a href="#sectionfour" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Visual Design</a>
+    <a href="#sectionfive" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">High Fi Prototype</a>
+    <a href="responsive_redesign.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Redesigned Page</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#sectionone" class="w3-bar-item w3-button w3-padding-large">Identifying Usability Problems</a>
+    <a href="#sectionthree" class="w3-bar-item w3-button w3-padding-large">Lo Fi Prototyping</a>
+    <a href="#sectionfour" class="w3-bar-item w3-button w3-padding-large">Visual Deisng Guide</a>
+    <a href="#sectionfive" class="w3-bar-item w3-button w3-padding-large">High Fi Prototyping</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Redesigned Page</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header id="homeone" class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Responsive Redesign</h1>
+  <p class="w3-xlarge">A CS1300 Project</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Picking a Webpage to Redesign</h1>
+      <h5 class="w3-padding-32">In this project, I have redesigned Bagel Gourmet Cafe’s website to make it more usable, learnable, memorable, and intuitive. I have done so by first citing problems with usability, then creating low fi prototypes, and lastly completing high fi prototypes.</h5>
+
+      <p class="w3-text-grey">The original website is linked here and a screenshot is included on the right.  Bagel Gourmet Cafe restaurants are some of my favorites in Providence and I chose to redesign their website as a loyal customer who sees potential for a quality upgrade.</p>
+      <a href="http://bagelgourmetcafe.com//">link to original site</a>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="bgc.png" alt="Website" style="width:400px;height:500px";>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="sectionone">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="unknown.png" alt="Website" style="width:200px;height:200px";>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Usability Problems</h1>
+      <h5 class="w3-padding-32">I've identified the following issues with usability, memorability, and learnability with this website.</h5>
+
+      <p class="w3-text-grey"><ol type="1">
+        <li>Text is confusing (Usability)</li>
+        <ol type="a">
+          <li>No specification as to whether store hours are same as delivery hours</li>
+        </ol>
+        <li>Ordering functionality is flawed (Usability)</li>
+        <ol type="a">
+          <li>Order preferences cannot be made for multiple items. (If you order two bagel sandwiches, you can only select preferences for all bagel sandwiches)</li>
+          <li>Quantity of item in shopping cart does not change when multiple are added</li>
+        </ol>
+        <li>Website navigation isn’t clear (learnability and memorability)</li>
+        <ol type="a">
+          <li>There is no indication of what tab you are in within the website
+          </li>
+          <li>Action buttons do not appear where eyes finish reading</li>
+          <li>The menu categories and shopping cart view are integrated bizarrely.</li>
+        </ol>
+        <li>Color choices hinder navigation ability (learnability and memorability)</li>
+        <ol type="a">
+          <li>Columns of dark color draw eyes away from important items
+          </li>
+          <li>Low contrast yellow text is illegible
+          </li>
+        </ol>
+        <li>Conceptual model is flawed</li>
+        <ol type="a">
+          <li>There are no “save” or “update” buttons for preferences in cart
+          </li>
+          <li>Underlined text is random and does not link to a new page          </li>
+          <li>Checkboxes versus drop downs have the same functionality</li>
+        </ol>
+      </ol></p>
+
+      <h5 class="w3-padding-32">In terms of accessibility, Bagel Gourmet Cafe can make some improvements for users. A web accessibility tool, Web Aim Wave, cites the following problems: missing labels on fields, empty headings, empty table headers, no page regions, low color contrast with text, and lack of first level heading. </h5>
+      <h5 class="w3-padding-32">Most of these issues are not immediately apparent when viewing the website, however they remain barriers to accessibility for screen readers and other tools. I agree with the problems discovered by Web Aim Wave. </h5>
+
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="sectionthree">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Lo Fi Prototype</h1>
+      <h5 class="w3-padding-32">Below and to the right are my annotated Low-Fi prototypes. You'll notice the usability issues are all addressed in annotations except 4a,4b, 5a, and 5c. 4a and b both relate to color and are not apparent in the lowfi design. The functionality described in 5a and b has been removed. </h5>
+
+      <img src="lowfi_d.png" alt="LowFidesktop" style="width:600px;height:700px";>
+      <img src="lowfi_t.png" alt="LowFitablet" style="width:500px;height:600px";>
+      
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="lowfi_p.png" alt="LowfiPhone" style="width:400px;height:700px";>
+    </div>
+  </div>
+</div>
+
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="sectionfour">
+  <div class="w3-content">
+
+    <div class="w3-twothird">
+      <h1>Visual Design Guide</h1>
+      <h5 class="w3-padding-32">Below is a photo of the visual design guide that I've constructed. It is inspired by the actual website and communicates the desired styles for the redesigned page.</h5>
+      <a href="https://www.figma.com/file/MjX0iFhvBRRXFsxm4DHPib/Bagel-Gourmet-Cafe-Website?node-id=0%3A1">Here is a link to the Figma page</a>
+    </div>
+    <img src="design.png" alt="Website" style="width:700px;height:700px";>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="sectionfive">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>High Fi Prototype</h1>
+      <h5 class="w3-padding-32">Below and to the right are my annotated High-Fi prototypes. Color is used to preserve visual hierarchy by using high contrast to highlight important parts of the webpage. The background is neutral in color to allow viewers to track areas of importance by color. Fonts changes (italics) are used to diversify font and draw attention to speficic words. </h5>
+      <a href="https://www.figma.com/file/MjX0iFhvBRRXFsxm4DHPib/Bagel-Gourmet-Cafe-Website?node-id=0%3A1">Here is a link to the Figma page</a>
+      <img src="highfi_d.png" alt="LowFidesktop" style="width:650px;height:700px";>
+      <img src="highfi_t.png" alt="LowFitablet" style="width:500px;height:600px";>
+      
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="highfi_p.png" alt="LowfiPhone" style="width:400px;height:700px";>
+    </div>
+  </div>
+</div>
+
+<!-- Sixth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="sectionsix">
+  <div class="w3-content">
+
+    <div class="w3-twothird">
+      <h1>Visual Design Guide</h1>
+      <h5 class="w3-padding-32">Below is a photo of the visual design guide that I've constructed. It is inspired by the actual website and communicates the desired styles for the redesigned page.</h5>
+      <a href="https://www.figma.com/file/MjX0iFhvBRRXFsxm4DHPib/Bagel-Gourmet-Cafe-Website?node-id=0%3A1">Here is a link to the Figma page</a>
+    </div>
+    <img src="design.png" alt="Website" style="width:700px;height:700px";>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
